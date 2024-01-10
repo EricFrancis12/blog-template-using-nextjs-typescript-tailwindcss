@@ -19,10 +19,12 @@ export interface IArticleHeaderData {
 }
 
 export interface iArticle {
+  slug?: string,
   path: string;
   featureArticle?: boolean;
   preview: IArticleHeaderData;
   seo?: iSEO;
+  html?: string;
 }
 
 export interface iSEO {

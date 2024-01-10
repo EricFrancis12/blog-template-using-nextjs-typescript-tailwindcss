@@ -175,29 +175,26 @@ export const CREATE_SEO_CONFIG = (PAGE_SEO: iSEO) => {
 
   const ogImage = PAGE_SEO.ogImage
     ? `${LOCAL_URL}${transformImagePaths(PAGE_SEO?.ogImage)}`
-    : `${LOCAL_URL}${
-        ARTICLE_DETAILS?.preview.thumbnail
-          ? transformImagePaths(ARTICLE_DETAILS?.preview.thumbnail)
-          : null
-      }`;
+    : `${LOCAL_URL}${ARTICLE_DETAILS?.preview.thumbnail
+      ? transformImagePaths(ARTICLE_DETAILS?.preview.thumbnail)
+      : null
+    }`;
 
   const twitterHandle = PAGE_SEO?.twitterHandle || "";
   const author = ARTICLE_DETAILS
-    ? ARTICLE_DETAILS?.preview.author.name
+    ? ARTICLE_DETAILS?.preview?.author?.name
     : PAGE_SEO?.author;
 
   const title =
     router.asPath === "/"
-      ? `${
-          ARTICLE_DETAILS
-            ? ARTICLE_DETAILS?.preview?.articleTitle
-            : PAGE_SEO?.title
-        } ${author ? "| " + author : null}`
-      : `${
-          ARTICLE_DETAILS
-            ? ARTICLE_DETAILS?.preview?.articleTitle
-            : PAGE_SEO?.title
-        } | ${WEBSITE_NAME} ${author ? "| " + author : null}`;
+      ? `${ARTICLE_DETAILS
+        ? ARTICLE_DETAILS?.preview?.articleTitle
+        : PAGE_SEO?.title
+      } ${author ? "| " + author : null}`
+      : `${ARTICLE_DETAILS
+        ? ARTICLE_DETAILS?.preview?.articleTitle
+        : PAGE_SEO?.title
+      } | ${WEBSITE_NAME} ${author ? "| " + author : null}`;
 
   let seo_config = {
     title: title,

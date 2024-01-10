@@ -13,7 +13,7 @@ import { ThemeProvider } from 'next-themes'
 
 import "@uiw/react-textarea-code-editor/dist.css";
 import 'react-medium-image-zoom/dist/styles.css';
-
+import '../src/styles/markdown-to-html.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
