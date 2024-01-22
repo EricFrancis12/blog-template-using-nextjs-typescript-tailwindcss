@@ -1,15 +1,15 @@
 /**These are necessary imports / components for the page */
 import { ImageSize, TextAlign, ListType } from "../src/shared/enums";
-import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider  } from "../src/components";
+import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider } from "../src/components";
 import { iSEO } from "../src/shared/interfaces";
 
 const ContactUs = () => {
     const PAGE_SEO: iSEO = {
         title: 'Contact Us',
-        description: 'For any any queries related to this project / template feel free to connect with us on webexpe13@gmail.com',
-        keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
-        author: 'Mayur Nalwala, Rupali Yadav'
-    } 
+        description: 'For any any queries related to this project / template feel free to connect with us on contact@ericfrancis.xyz',
+        keywords: 'contact us, contact@ericfrancis.xyz, next js blog template',
+        author: 'Eric Francis'
+    }
     return (
         <PageLayout PAGE_SEO={PAGE_SEO} home>
             <section className='container px-3 pb-10 md:pt-20 pt-[80px]'>
@@ -21,7 +21,7 @@ const ContactUs = () => {
                     <div className="md:w-1/2 w-full md:pl-2">
                         <Text p className="!text-lg leading-relaxed">
                             For any any queries related to this project / template feel free to connect with us at the given email.
-                            You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                            You can also post any comments on our <a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
                         </Text>
                     </div>
                     <div className="md:w-1/3 w-full">
@@ -29,7 +29,7 @@ const ContactUs = () => {
                             write to us at
                         </Text>
                         <Text subtitle className="!font-light md:!text-3xl">
-                            webexpe13@gmail.com
+                            contact@ericfrancis.xyz
                         </Text>
                     </div>
                 </div>

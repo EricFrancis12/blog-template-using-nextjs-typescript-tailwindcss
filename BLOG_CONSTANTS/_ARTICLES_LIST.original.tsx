@@ -25,7 +25,7 @@ import { AUTHOR } from './_BLOG_SETUP';
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
         keywords: 'demo, blog setup',
         ogImage: '/images/tutorials/demo-image.jpg',
-        twitterHandle: '@AUTHOR_nalwala',
+        twitterHandle: '@twitter',
     }
 }
  */
@@ -48,7 +48,7 @@ const ARTICLES_LIST: iArticle[] = [
             description: 'These are the steps to setup your blog',
             keywords: 'demo, blog setup',
             ogImage: '/public/imp_assets/tutorials/how-to-setup-blog.svg',
-            twitterHandle: '@AUTHOR_nalwala',
+            twitterHandle: '@twitter',
             author: AUTHOR.name,
         },
     },
@@ -67,7 +67,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, centered, centered layout, blog page layout, blog page design with centered layout, writing first article, webexpe, webexpe.com',
+                'demo, centered, centered layout, blog page layout, blog page design with centered layout, writing first article',
             ogImage: '/public/imp_assets/tutorials/how-to-write-first-article.svg',
         },
     },
@@ -122,7 +122,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, with sidebar, blog page layout, blog page design with sidebar, webexpe, webexpe.com',
+                'demo, with sidebar, blog page layout, blog page design with sidebar',
             ogImage: '/public/imp_assets/tutorials/blog-with-sidebar-layout.svg',
         },
     },
@@ -140,7 +140,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, centered, centered layout, blog page layout, blog page design with centered layout, webexpe, webexpe.com',
+                'demo, centered, centered layout, blog page layout, blog page design with centered layout',
             ogImage: '/public/imp_assets/tutorials/blog-with-centered-layout.svg',
         },
     },
@@ -156,7 +156,7 @@ const ARTICLES_LIST: iArticle[] = [
             category: 'tutorial',
         },
         seo: {
-            keywords: 'demo, all components, webexpe, webexpe.com',
+            keywords: 'demo, all components',
             ogImage: '/public/imp_assets/tutorials/all-components.svg',
         },
     },
@@ -173,7 +173,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, all components, style guide, styling, css, tailwind css, tailwind, webexpe, webexpe.com',
+                'demo, all components, style guide, styling, css, tailwind css, tailwind',
             ogImage: '/public/imp_assets/tutorials/style-guide.svg',
         },
     },
@@ -190,7 +190,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, all components, style guide, styling, css, tailwind css, tailwind, webexpe, webexpe.com, styling tutorial, icons, how to use icons in website',
+                'demo, all components, style guide, styling, css, tailwind css, tailwind, styling tutorial, icons, how to use icons in website',
             ogImage: '/public/imp_assets/tutorials/how-to-use-icons.svg',
         },
     },
@@ -208,7 +208,7 @@ const ARTICLES_LIST: iArticle[] = [
         },
         seo: {
             keywords:
-                'demo, all components, style guide, styling, css, tailwind css, tailwind, webexpe, webexpe.com, styling tutorial, icons, how to use icons in website',
+                'demo, all components, style guide, styling, css, tailwind css, tailwind, styling tutorial, icons, how to use icons in website',
             ogImage: '/public/imp_assets/tutorials/how-to-write-first-article.svg',
         },
     },

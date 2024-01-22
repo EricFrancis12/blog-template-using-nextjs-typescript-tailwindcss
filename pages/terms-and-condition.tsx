@@ -1,6 +1,6 @@
 /**These are necessary imports / components for the page */
 import { ImageSize, TextAlign, ListType } from "../src/shared/enums";
-import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider  } from "../src/components";
+import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider } from "../src/components";
 import { iSEO } from "../src/shared/interfaces";
 import { WEBSITE_URL } from "../BLOG_CONSTANTS/_BLOG_SETUP";
 
@@ -8,9 +8,9 @@ const TermsAndConditions = () => {
     const PAGE_SEO: iSEO = {
         title: 'Terms and conditions',
         description: `These terms and conditions outline the rules and regulations for the use of Website, located at ${WEBSITE_URL}.`,
-        keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
-        author: 'Mayur Nalwala, Rupali Yadav'
-    }    
+        keywords: 'contact us, contact@ericfrancis.xyz, next js blog template',
+        author: 'Eric Francis'
+    }
     return (
         <PageLayout PAGE_SEO={PAGE_SEO} home>
             <div className='container px-3 pb-[20px] mt-10 pt-14 md:pt-0'>
@@ -103,28 +103,28 @@ const TermsAndConditions = () => {
                 <Text subtitle className="text-xl">
                     iFrames
                 </Text>
-                <Text p> 
+                <Text p>
                     Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.
                 </Text>
                 <Seperator line />
                 <Text subtitle className="text-xl">
                     Content Liability
                 </Text>
-                <Text p> 
+                <Text p>
                     We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.
                 </Text>
                 <Seperator line />
                 <Text subtitle className="text-xl">
                     Reservation of Rights
                 </Text>
-                <Text p> 
+                <Text p>
                     We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
                 </Text>
                 <Seperator line />
                 <Text subtitle className="text-xl">
                     Removal of links from our website
                 </Text>
-                <Text p> 
+                <Text p>
                     If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly. <br />
                     We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.
                 </Text>
@@ -132,7 +132,7 @@ const TermsAndConditions = () => {
                 <Text subtitle className="text-xl">
                     Disclaimer
                 </Text>
-                <Text p> 
+                <Text p>
                     To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will: <br />
                     <ul className="list-disc pl-8">
                         <li>limit or exclude our or your liability for death or personal injury;</li>

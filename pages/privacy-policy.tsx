@@ -7,8 +7,8 @@ const TermsAndConditions = () => {
     const PAGE_SEO: iSEO = {
         title: 'Privacy Policy',
         description: `This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in website`,
-        keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
-        author: 'Mayur Nalwala, Rupali Yadav'
+        keywords: 'contact us, contact@ericfrancis.xyz, next js blog template',
+        author: 'Eric Francis'
     }
     return (
         <PageLayout PAGE_SEO={PAGE_SEO} home>
@@ -74,7 +74,7 @@ const TermsAndConditions = () => {
                     Google DoubleClick DART Cookie
                 </Text>
                 <Text p>
-                    Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – https://policies.google.com/technologies/ads
+                    Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL - https://policies.google.com/technologies/ads
                 </Text>
                 <Seperator line />
                 <Text subtitle className="text-xl">

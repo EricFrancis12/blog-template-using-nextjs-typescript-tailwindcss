@@ -19,7 +19,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             description: "These are the steps to setup your blog",
             keywords: "demo, blog setup",
             ogImage: "/public/imp_assets/tutorials/how-to-setup-blog.svg",
-            twitterHandle: "@AUTHOR_nalwala",
+            twitterHandle: "@twitter",
             author: AUTHOR.name
         }
     },
@@ -36,7 +36,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'tutorial'
         },
         seo: {
-            keywords: "demo, centered, centered layout, blog page layout, blog page design with centered layout, writing first article, webexpe, webexpe.com",
+            keywords: "demo, centered, centered layout, blog page layout, blog page design with centered layout, writing first article",
         }
     },
     {
@@ -84,7 +84,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'layouts'
         },
         seo: {
-            keywords: "demo, with sidebar, blog page layout, blog page design with sidebar, webexpe, webexpe.com",
+            keywords: "demo, with sidebar, blog page layout, blog page design with sidebar",
             ogImage: "/public/imp_assets/tutorials/blog-with-sidebar-layout.svg",
         }
     },
@@ -100,7 +100,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'layouts'
         },
         seo: {
-            keywords: "demo, centered, centered layout, blog page layout, blog page design with centered layout, webexpe, webexpe.com",
+            keywords: "demo, centered, centered layout, blog page layout, blog page design with centered layout",
         }
     },
     {
@@ -115,7 +115,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'tutorial'
         },
         seo: {
-            keywords: "demo, all components, webexpe, webexpe.com",
+            keywords: "demo, all components",
         }
     },
     {
@@ -130,7 +130,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'tutorial'
         },
         seo: {
-            keywords: "demo, all components, style guide, styling, css, tailwind css, tailwind, webexpe, webexpe.com",
+            keywords: "demo, all components, style guide, styling, css, tailwind css, tailwind",
         }
     },
     {
@@ -145,7 +145,7 @@ export const MOCK_ARTICLES_LIST: iArticle[] = [
             category: 'tutorial'
         },
         seo: {
-            keywords: "demo, all components, style guide, styling, css, tailwind css, tailwind, webexpe, webexpe.com, styling tutorial, icons, how to use icons in website",
+            keywords: "demo, all components, style guide, styling, css, tailwind css, tailwind, styling tutorial, icons, how to use icons in website",
         }
     },
 ]

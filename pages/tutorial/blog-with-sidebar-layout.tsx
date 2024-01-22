@@ -5,13 +5,13 @@ import CodeBlock from "../../src/components/CodeBlock";
 import { HowToUseImageCode, HowToUseList, HowToUseSeperator, HowToUseTextCode, rightSideAdCode } from "../../src/constants/codeBlocks";
 
 const Article = () => {
-    const ads = [
-        '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09N3ZNHTY&asins=B09N3ZNHTY&linkId=4105a64f5c32e42007f83bd7a9e20fbb&show_border=true&link_opens_in_new_window=true"></iframe>',
-        '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B08CHZ3ZQ7&asins=B08CHZ3ZQ7&linkId=8a8653c24dc89b1ee6a3ac2a85c7208b&show_border=true&link_opens_in_new_window=true"></iframe>',
-        '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B099ZYBSWB&asins=B099ZYBSWB&linkId=b285d1699f1620641c1636f1bc296761&show_border=true&link_opens_in_new_window=true"></iframe>',
-        '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09FK2639V&asins=B09FK2639V&linkId=53a2b52b7d82b6c9bb5cf6e61d9a63f3&show_border=true&link_opens_in_new_window=true"></iframe>',
-        '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09FKBQ3JM&asins=B09FKBQ3JM&linkId=6d5e15d321246d0b37229f1c9d74aa30&show_border=true&link_opens_in_new_window=true"></iframe>',
-        `<script type="text/javascript" src="https://ap.lijit.com/www/delivery/fpi.js?z=1066288&width=300&height=250"></script>`
+    const ads: string[] = [
+        // '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09N3ZNHTY&asins=B09N3ZNHTY&linkId=4105a64f5c32e42007f83bd7a9e20fbb&show_border=true&link_opens_in_new_window=true"></iframe>',
+        // '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B08CHZ3ZQ7&asins=B08CHZ3ZQ7&linkId=8a8653c24dc89b1ee6a3ac2a85c7208b&show_border=true&link_opens_in_new_window=true"></iframe>',
+        // '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B099ZYBSWB&asins=B099ZYBSWB&linkId=b285d1699f1620641c1636f1bc296761&show_border=true&link_opens_in_new_window=true"></iframe>',
+        // '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09FK2639V&asins=B09FK2639V&linkId=53a2b52b7d82b6c9bb5cf6e61d9a63f3&show_border=true&link_opens_in_new_window=true"></iframe>',
+        // '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=webexpestor02-21&language=en_IN&marketplace=amazon&region=IN&placement=B09FKBQ3JM&asins=B09FKBQ3JM&linkId=6d5e15d321246d0b37229f1c9d74aa30&show_border=true&link_opens_in_new_window=true"></iframe>',
+        // `<script type="text/javascript" src="https://ap.lijit.com/www/delivery/fpi.js?z=1066288&width=300&height=250"></script>`
     ]
     return (
         // pass blogwithsidebar as show below for article page with sidebar layout
@@ -36,8 +36,8 @@ const Article = () => {
                 `}
                 className="my-5"
             />
-                The above code snippet gives you a demo on how to use blogwithsidebar layout. The current article that you see is the basic output/example of blogwithsidebar 
-                layout which will consist of a navbar on the top, a side bar and the main content area. The side bar will content author details and more articles by the author.
+            The above code snippet gives you a demo on how to use blogwithsidebar layout. The current article that you see is the basic output/example of blogwithsidebar
+            layout which will consist of a navbar on the top, a side bar and the main content area. The side bar will content author details and more articles by the author.
             {/* </Text> */}
             <Text subtitle className="mt-10 md:text">
                 How to use
@@ -99,8 +99,8 @@ const Article = () => {
                 <b>note:</b> all these components are used in <u>blog-with-sidebar-layout.tsx</u> and <u>blog-with-centerd-layout.tsx</u> in <u>pages/tutorial</u>. You can also check <b><LinkTo href="/pages/tutorial/all-components.tsx" passHref>All Components Demo</LinkTo></b>, list of all components, its types and how to use them.
             </Text>
             <div className="px-4 py-3 dark:bg-slate-900 bg-blue-200 rounded mt-5 !text-lg leading-relaxed">
-                For any any queries related to this project / template feel free to connect with us at <u>webexpe13@gmail.com</u>.
-                You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                For any any queries, feel free to connect with us at <u>contact@ericfrancis.xyz</u>.
+                You can also post any comments on our <a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
             </div>
         </PageLayout>
     )

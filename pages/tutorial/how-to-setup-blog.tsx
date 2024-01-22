@@ -27,8 +27,8 @@ const BlogSetup = () => {
 
                     <li className="">
                         Download / clone the blog template from our github page to a folder on your computer.
-                        <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss" className="pl-2 font-semibold" target="_blank" rel="noopener noreferrer">
-                            https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss
+                        <a href="https://github.com/EricFrancis12" className="pl-2 font-semibold" target="_blank" rel="noopener noreferrer">
+                            https://github.com/EricFrancis12
                         </a>
                         <br />
                         If you are using Git you can clone the code or click the <b>use template</b> button to generate your own repo.
@@ -44,10 +44,10 @@ const BlogSetup = () => {
                         After the installation is done run <b>npm start</b> in the terminal, it will start your project on http://localhost:3000/.
 
                         <br />
-                        If you are facing any difficulty, write a comment on our discussion board <b><i><a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions/6" target="_blank" rel="noopener noreferrer">LINK</a></i></b>
+                        If you are facing any difficulty, write a comment on our discussion board <b><i><a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer">LINK</a></i></b>
 
                         <br />
-                        or write to us at <a href="mailto:webexpe13@gmail.com">webexpe13@gmail.com</a>
+                        or write to us at <a href="mailto:contact@ericfrancis.xyz">contact@ericfrancis.xyz</a>
                     </li>
                     <li className="mb-20">
                         If everything goes well you will see a demo blog with few demo articles which will walk you through simple tutorials on how to use layouts and different components to write articles.
@@ -135,8 +135,8 @@ const BlogSetup = () => {
                 </Text>
 
                 <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded mt-10 !text-lg leading-relaxed ">
-                    For any any queries related to this project / template feel free to connect with us at <u>webexpe13@gmail.com</u>.
-                    You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                    For any any queries, feel free to connect with us at <u>contact@ericfrancis.xyz</u>.
+                    You can also post any comments on our <a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
                 </div>
             </div>
         </PageLayout>

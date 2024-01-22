@@ -52,7 +52,7 @@ const Article = () => {
                             You can set it <b>true or false</b> as shown in the above image. If true the article card will be of full width as shown in the image below. <br />
                             <i><b>*note : </b> adding featureArticle property is optional</i>
                         </Text>
-                        <Image className="my-5" src="/public/imp_assets/tutorials/feature-article-example.png" alt="feature article example | webexpe.com" caption="feature article exmaple" size={ImageSize.DEFAULT} />
+                        <Image className="my-5" src="/public/imp_assets/tutorials/feature-article-example.png" alt="feature article example" caption="feature article exmaple" size={ImageSize.DEFAULT} />
                     </li>
                     <li>
                         <b>preview</b><br />
@@ -111,8 +111,8 @@ const Article = () => {
                 </Text>
 
                 <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded mt-10 !text-lg leading-relaxed ">
-                    For any any queries related to this project / template feel free to connect with us at <u>webexpe13@gmail.com</u>.
-                    You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                    For any any queries, feel free to connect with us at <u>contact@ericfrancis.xyz</u>.
+                    You can also post any comments on our <a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
                 </div>
             </div>
         </PageLayout>

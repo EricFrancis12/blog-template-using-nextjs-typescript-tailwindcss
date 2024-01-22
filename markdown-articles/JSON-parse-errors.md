@@ -1,4 +1,4 @@
-# Unraveling the Top 5 JSON.parse() Errors and Their Solutions
+# Unraveling the Top 5 JSON.parse() Errors and Their Solutions Written By My Good Friend Chat GPT
 
 ## Introduction:
 

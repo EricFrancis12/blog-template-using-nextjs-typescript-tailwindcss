@@ -7,19 +7,19 @@ import { iSEO } from "../src/shared/interfaces";
 const AboutUs = () => {
     const PAGE_SEO: iSEO = {
         title: 'About Us',
-        description: `Hi we are WebExpe. This is an open source blog template which can help you start a simple static blog.`,
-        keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
-        author: 'Mayur Nalwala, Rupali Yadav'
+        description: `About Us`,
+        keywords: 'contact us, contact@ericfrancis.xyz',
+        author: 'Eric Francis'
     }
     return (
         <PageLayout PAGE_SEO={PAGE_SEO} home>
             <section className='container px-3 md:pb-20 md:pt-10 pt-20'>
                 <div className="">
-                    <a href="https://webexpe.com/" target="_blank" rel="noopener noreferrer" className="block md:w-[15%] w-[50%] ">
-                        <img src="/images/YT Logo.png" alt="webexpe.com" className="rounded-lg overflow-hidden" />
+                    <a href="https://ericfrancis.xyz" target="_blank" rel="noopener noreferrer" className="block md:w-[15%] w-[50%] ">
+                        <img src="/images/YT Logo.png" className="rounded-lg overflow-hidden" />
                     </a>
                     <Text title className='mb-5 mt-10 dark:text-sky-400 text-sky-600'>
-                        Hi we are WebExpe.
+                        Hello, thanks for stopping by!
                     </Text>
                     <Text subtitle className='text-xl mb-5'>
                         This is an open source blog template which can help you start a simple static blog.
@@ -28,7 +28,7 @@ const AboutUs = () => {
                     <Text p className='text-lg'>
                         The idea was to start a blog or create a template with as little investment as possible. <br />In this template we have used Next.js SSG to create static HTML files which can be hosted on firebase or any static site hosting service. <br />
                         There is also options like vercel for hosting Next.js dynamic webistes but we wanted this template to be easy to use for any non techie person too, so we explored the option of static site generation. <br /><br />
-                        If you have a github account you can clone the project or use it as a template or else you can simply download the code from <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss" className="underline font-bold">here</a>.
+                        If you have a github account you can clone the project or use it as a template or else you can simply download the code from <a href="https://github.com/EricFrancis12" className="underline font-bold">here</a>.
                     </Text>
 
                     <div className="flex flex-wrap justify-between">
@@ -86,15 +86,15 @@ const AboutUs = () => {
                     </Text>
                     <Seperator />
                     <Text p className='text-lg'>
-                        Created by <LinkTo href="https://www.linkedin.com/in/rupali-yadav-087bb4112/" external className="font-semibold">Rupali Yadav</LinkTo> and <LinkTo href="https://www.linkedin.com/in/mayur-nalwala/" external className="font-semibold">Mayur Nalwala</LinkTo> from <a href="https://webexpe.com/" target="_blank" rel="noopener noreferrer" className="font-medium tracking-widest">WebExpe</a> with ♥
+                        <LinkTo href="https://www.linkedin.com" external className="font-semibold">Eric Francis</LinkTo>
                     </Text>
-                    <a href="https://www.buymeacoffee.com/webexpe13z" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/bmc.png" className="ml-0" alt="webexpe.com" />
+                    <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/bmc.png" className="ml-0" />
                     </a>
                     <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded my-5">
                         <Text p className="!text-lg leading-relaxed mb-0">
-                            For any any queries related to this project / template feel free to connect with us at <u>webexpe13@gmail.com</u>.
-                            You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                            For any any queries related to this project / template feel free to connect with us at <u>contact@ericfrancis.xyz</u>.
+                            You can also post any comments on our <a href="https://github.com/EricFrancis12" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
                         </Text>
                     </div>
                 </div>

@@ -117,7 +117,7 @@ const AllComponents = () => {
                 className={combineClasses(
                   "block text-gray-500 font-medium py-1 pl-3 border-l",
                   isActive(each.href) &&
-                    "text-blue-500 border-blue-500 border-l-2"
+                  "text-blue-500 border-blue-500 border-l-2"
                 )}
               >
                 {each.label}
@@ -250,34 +250,34 @@ const AllComponents = () => {
               <div className="flex flex-wrap">
                 <Image
                   src="/public/imp_assets/tutorials/demo-image.jpg"
-                  alt="how to use Image | webexpe.com"
+                  alt="how to use Image"
                   caption="Default size image with caption"
                   className="my-5"
                 />
                 <Image
                   src="/public/imp_assets/tutorials/demo-image.jpg"
-                  alt="how to use Image | webexpe.com"
+                  alt="how to use Image"
                   caption="Full size image with caption"
                   size={ImageSize.FUll}
                   className="mb-5"
                 />
                 <Image
                   src="/public/imp_assets/tutorials/demo-image.jpg"
-                  alt="how to use Image | webexpe.com"
+                  alt="how to use Image"
                   caption="Medium size image with caption"
                   size={ImageSize.MEDIUM}
                   className="mb-5"
                 />
                 <Image
                   src="/public/imp_assets/tutorials/demo-image.jpg"
-                  alt="how to use Image | webexpe.com"
+                  alt="how to use Image"
                   caption="Small size image with caption"
                   size={ImageSize.SMALL}
                   className="mb-5"
                 />
                 <Image
                   src="/public/imp_assets/tutorials/demo-image.jpg"
-                  alt="how to use Image | webexpe.com"
+                  alt="how to use Image"
                   caption="XS size image with caption"
                   size={ImageSize.XS}
                   className="mb-5"
@@ -398,11 +398,11 @@ const AllComponents = () => {
 
             <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded my-5">
               <Text p className="!text-lg leading-relaxed mb-0">
-                For any any queries related to this project / template feel free
-                to connect with us at <u>webexpe13@gmail.com</u>. You can also
+                For any any queries, feel free
+                to connect with us at <u>contact@ericfrancis.xyz</u>. You can also
                 post any comments on our{" "}
                 <a
-                  href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions"
+                  href="https://github.com/EricFrancis12"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

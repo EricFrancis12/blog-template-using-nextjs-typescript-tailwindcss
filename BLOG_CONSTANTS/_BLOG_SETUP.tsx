@@ -37,8 +37,8 @@ export const AUTHOR: IAuthor = {
 };
 
 // This can your company name / your name etc for SEO purposes
-export const WEBSITE_NAME: string = 'Next Js Blog Template';
-export const WEBSITE_URL: string = 'https://nextjs-simple-blog-template.web.app/';
+export const WEBSITE_NAME: string = 'Next Js Blog';
+export const WEBSITE_URL: string = 'https://ericfrancis.xyz';
 
 /**
  * This is the main navigation setup.
@@ -76,12 +76,12 @@ export const PRIMARY_NAV: iNavSetup = {
         {
             // to open a link in new tab pass newTab: true
             label: 'Support Us',
-            path: 'https://www.buymeacoffee.com/webexpe13z',
+            path: 'https://www.buymeacoffee.com',
             newTab: true
         },
         {
             label: 'Github Repo',
-            path: 'https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss',
+            path: 'https://github.com/EricFrancis12',
             newTab: true
         },
         {
@@ -107,12 +107,12 @@ export const PRIMARY_NAV: iNavSetup = {
         },
         {
             label: 'Support Us',
-            path: 'https://www.buymeacoffee.com/webexpe13z',
+            path: 'https://www.buymeacoffee.com',
             newTab: true
         },
         {
             label: 'Github Repo',
-            path: 'https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss',
+            path: 'https://github.com/EricFrancis12',
             newTab: true
         },
         {
@@ -122,15 +122,15 @@ export const PRIMARY_NAV: iNavSetup = {
     ],
     socials: [
         {
-            link: 'https://www.facebook.com/',
+            link: 'https://www.facebook.com',
             icon: <AiFillFacebook />
         },
         {
-            link: 'https://www.instagram.com/',
+            link: 'https://www.instagram.com',
             icon: <AiFillInstagram />
         },
         {
-            link: 'https://twitter.com/WebExpe',
+            link: 'https://twitter.com',
             icon: <AiOutlineTwitter />
         },
     ]
@@ -142,6 +142,6 @@ export const DEFAULT_SEO: iSEO = {
     keywords: "Blog, next js, template, next js blog, blog setup, typescript, nextjs typescript, react js blog template, responsive blog template",
     url: WEBSITE_URL,
     author: `${AUTHOR.name}`,
-    twitterHandle: '@WebExpe',
+    twitterHandle: '@twitter',
     ogImage: '/public/images/og-image.jpg'
 }
