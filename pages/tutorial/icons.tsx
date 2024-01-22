@@ -82,7 +82,7 @@ const Icons = () => {
                     How to use different group/family of icons in ReactIcons,
                 </Text>
                 In react icons we have around 22 icons groups or types like <b>"Ant design icons, Bootstrap icons, Boxicons . . ."</b> etc. When you click on the sidebar list button we se a proper import statement and list of all icons in the icon group.
-                <Image src="/public/imp_assets/tutorials/reacticons.png" caption="ReactIcons website screenshot" />
+                <Image alt="ReactIcons website screenshot" src="/public/imp_assets/tutorials/reacticons.png" caption="ReactIcons website screenshot" />
                 here we can see each icons in <b>BoxIcons</b> there is a <b>"Bi"</b> prefix i.e each icon in <b>BoxIcons</b> start with a <b>"Bi"</b> like <b>"BiAbacus, BiAdjust . . ."</b> etc. so when want to use any icon from BoxIcons you have to import the icon as <b>{'import { IconName } from "react-icons/bi";'}</b>
                 <CodeBlock code={HowToUseDiffGroupIcons} className="my-5" />
                 <div className="text-4xl mb-2">

@@ -16,7 +16,7 @@ const AboutUs = () => {
             <section className='container px-3 md:pb-20 md:pt-10 pt-20'>
                 <div className="">
                     <a href="https://ericfrancis.xyz" target="_blank" rel="noopener noreferrer" className="block md:w-[15%] w-[50%] ">
-                        <img src="/images/YT Logo.png" className="rounded-lg overflow-hidden" />
+                        <img src="/images/YT Logo.png" alt="Logo" className="rounded-lg overflow-hidden" />
                     </a>
                     <Text title className='mb-5 mt-10 dark:text-sky-400 text-sky-600'>
                         Hello, thanks for stopping by!
@@ -89,7 +89,7 @@ const AboutUs = () => {
                         <LinkTo href="https://www.linkedin.com" external className="font-semibold">Eric Francis</LinkTo>
                     </Text>
                     <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/bmc.png" className="ml-0" />
+                        <img src="/images/bmc.png" alt="Logo" className="ml-0" />
                     </a>
                     <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded my-5">
                         <Text p className="!text-lg leading-relaxed mb-0">

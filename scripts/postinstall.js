@@ -40,7 +40,6 @@ const ARTICLES_LIST = markdownArticlesDirContents
         const category = 'blog';
         const path = `/pages/${category}/${slug}.tsx`;
 
-        console.log(fs.statSync(filePath));
         const date = fs.statSync(filePath).mtime;
         const title = slugToTitle(slug);
         const html = sanitize(marked(fs.readFileSync(filePath, { encoding: 'utf8' })).replace(/\n/g, ''));

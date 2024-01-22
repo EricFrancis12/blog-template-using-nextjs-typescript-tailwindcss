@@ -63,6 +63,7 @@ const CenteredNavbar = ({
                     ? transformImagePaths(logo.logoLight)
                     : transformImagePaths(logo.logo)
                 }
+                alt="Logo"
                 className="cursor-pointer"
                 width="100px"
               />
@@ -81,7 +82,7 @@ const CenteredNavbar = ({
                 href={each.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={each.link}
+                key={each.link || i}
                 className={combineClasses(
                   "dark:text-white text-black text-[24px] d-inline-block",
                   i === socials.length - 1 ? "ml-3" : "mx-3"
@@ -117,6 +118,7 @@ const CenteredNavbar = ({
             )
           ) : (
             <NavCatergoryDD
+              key={i}
               label={each.label}
               openDD={openDD}
               setOpenDD={() => setOpenDD(!openDD)}

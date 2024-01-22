@@ -1,11 +1,11 @@
 import classes from "./Navbar.module.scss";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { combineClasses, transformImagePaths } from "../../utils/utils";
 import { LogoType, THEMES } from "../../shared/enums";
 import LinkTo from "../LinkTo";
 import { useTheme } from "next-themes";
-import { BsFillMoonFill, BsFillSunFill , BsFillShareFill} from "react-icons/bs";
+import { BsFillMoonFill, BsFillSunFill, BsFillShareFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import NavCatergoryDD from "../Misc/NavCategoryDD";
 import { iNavbar, iNavLink, iNavSocials } from "../../shared/interfaces";
@@ -28,7 +28,7 @@ const SimpleNavbar = ({ openSearch, changeTheme, toggleSideMenu, openSidebar = f
           {
             logo ?
               logo.type === LogoType.IMAGE ?
-                <img src={theme === THEMES.DARK ? transformImagePaths(logo.logoLight) : transformImagePaths(logo.logo)} className="cursor-pointer" width="100px" /> :
+                <img alt="Logo" src={theme === THEMES.DARK ? transformImagePaths(logo.logoLight) : transformImagePaths(logo.logo)} className="cursor-pointer" width="100px" /> :
                 <a className='text-[22px] font-semibold'>{logo.logo}</a>
               : <a className='text-[22px] font-semibold'>Logo</a>
           }
@@ -39,15 +39,18 @@ const SimpleNavbar = ({ openSearch, changeTheme, toggleSideMenu, openSidebar = f
         <div className='text-[14px] font-normal items-center lg:flex hidden'>
           {
             navLinks.map((each: iNavLink, i: any) => (
-              each.type !== 'dropdown' ? !each.newTab ?
-                <LinkTo href={each.path} key={i} passHref className='mx-2'>
-                  {each.label}
-                </LinkTo> :
-                <a href={each.path} key={each.path + 1} target="_blank" rel="noopener noreferrer" className='d-block mx-2 flex-wrap'>
-                  {each.label}
-                </a>
-                :
-                <NavCatergoryDD label={each.label} openDD={openDD} setOpenDD={() => setOpenDD(!openDD)} floating />
+              <React.Fragment key={i}>
+                {each.type !== 'dropdown'
+                  ? !each.newTab
+                    ? <LinkTo href={each.path} key={i} passHref className='mx-2'>
+                      {each.label}
+                    </LinkTo>
+                    : <a href={each.path} key={each.path + 1} target="_blank" rel="noopener noreferrer" className='d-block mx-2 flex-wrap'>
+                      {each.label}
+                    </a>
+                  : <NavCatergoryDD label={each.label} openDD={openDD} setOpenDD={() => setOpenDD(!openDD)} floating />
+                }
+              </React.Fragment>
             ))
           }
           {

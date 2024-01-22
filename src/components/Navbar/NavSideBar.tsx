@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { THEMES } from '../../shared/enums';
 import { addBodyNoScroll, combineClasses, getCategories, removeBodyNoScroll } from '../../utils/utils';
 import classes from './Navbar.module.scss';
@@ -46,15 +46,18 @@ const NavSidebar = ({ openSidebar = false, closeNavSidebar, navSetup, changeThem
                 <div className='my-15'>
                     {
                         navSetup.sideNavLinks.map((each: iNavLink, i: any) => (
-                            each.type !== 'dropdown' ? !each.newTab ?
-                                <LinkTo href={each.path} key={i} passHref className='text-[16px] block my-3'>
-                                    {each.label}
-                                </LinkTo> :
-                                <a href={each.path} key={each.path} target="_blank" rel="noopener noreferrer" className='text-[16px] block my-3 flex-wrap'>
-                                    {each.label}
-                                </a>
-                                :
-                                <NavCatergoryDD label={each.label} openDD={openDD} setOpenDD={() => setOpenDD(!openDD)} />
+                            <React.Fragment key={i}>
+                                {each.type !== 'dropdown'
+                                    ? !each.newTab
+                                        ? <LinkTo href={each.path} key={i} passHref className='text-[16px] block my-3'>
+                                            {each.label}
+                                        </LinkTo>
+                                        : <a href={each.path} key={each.path} target="_blank" rel="noopener noreferrer" className='text-[16px] block my-3 flex-wrap'>
+                                            {each.label}
+                                        </a>
+                                    : <NavCatergoryDD label={each.label} openDD={openDD} setOpenDD={() => setOpenDD(!openDD)} />
+                                }
+                            </React.Fragment>
                         ))
                     }
                     {
@@ -110,7 +113,7 @@ const NavSidebar = ({ openSidebar = false, closeNavSidebar, navSetup, changeThem
                 <div className='mt-5 mb-4'>
                     <p className='mb-2 font-light'>Switch To {theme === THEMES.LIGHT ? 'Dark' : 'Light'} Theme :</p>
                     <button name="theme-switch" aria-label="theme-switch" className={combineClasses(classes.theme_switch, 'dark:text-white text-black')} onClick={() => changeTheme()}>
-                    {
+                        {
                             theme === THEMES.DARK ? <BsFillSunFill className="text-2xl" /> : <BsFillMoonFill className="text-lg" />
                         }
                     </button>
